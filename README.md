@@ -7,7 +7,7 @@ Install and configure PHP with Ansible.
 
 None
 
-## Tested plateform
+## Tested plateforms
 * Debian 9 (Stretch)
 * Debian 10 (Buster)
 
