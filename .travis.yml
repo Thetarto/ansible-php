@@ -2,13 +2,17 @@
 language: python
 services: docker
 
+env:
+  global:
+    - ROLE_NAME: php
+
 install:
   - pip install molecule docker
 
 before_script:
   - cd ../
-  - mv ansible-php thetarto.php
-  - cd thetarto.php
+  - mv ansible-$ROLE_NAME thetarto.$ROLE_NAME
+  - cd thetarto.$ROLE_NAME
 
 script:
   - molecule test
