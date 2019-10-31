@@ -1,4 +1,6 @@
 # Ansible-php
+[![Build Status](https://travis-ci.org/thetarto/ansible-php.svg?branch=master)](https://travis-ci.org/thetarto/ansible-php)
+
 Install and configure PHP with Ansible.
 
 ## Requirements
