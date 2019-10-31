@@ -1,8 +1,25 @@
-# Rôle PHP
-Ce rôle installe et configure PHP sur un serveur sous Debian.
+# Ansible-php
+Install and configure PHP with Ansible.
 
-## Pré-requis
+## Requirements
 
-Aucun
+None
 
-## Variables du rôle
+## Tested plateform
+* Debian 9 (Stretch)
+* Debian 10 (Buster)
+
+## Role Variables
+List of packages instaled by the role. It's not yet possible to install php from source.
+```yaml
+php_packages:
+  - php7.3
+```
+Name of the webserver daemon used by PHP. For example, apache2, httpd, nginx... Needed.
+```yaml
+php_webserver_daemon: "apache2"
+```
+## Examples
+## Installation
+## License
+GPL V3.0
