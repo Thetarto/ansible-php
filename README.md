@@ -22,7 +22,6 @@ Name of the webserver daemon used by PHP. For example, apache2, httpd, nginx... 
 php_webserver_daemon: "apache2"
 ```
 ## Examples
-
 ## Installation
 ```
 ansible-galaxy install supertarto.php
