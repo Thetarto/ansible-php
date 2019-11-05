@@ -23,5 +23,8 @@ php_webserver_daemon: "apache2"
 ```
 ## Examples
 ## Installation
+```
+ansible-galaxy install supertarto.php
+```
 ## License
 GPL V3.0

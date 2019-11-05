@@ -5,7 +5,10 @@ services: docker
 env:
   global:
     - ROLE_NAME: php
-
+  matrix:
+    - DISTRIB: debian10:v1
+    - DISTRIB: debian9:v1
+    
 install:
   - pip install molecule docker
 
