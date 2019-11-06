@@ -14,9 +14,8 @@ galaxy_info:
         - "buster"
 
   galaxy_tags:
-    - "database"
-    - "mariadb"
-    - "sql"
+    - "webserver"
+    - "php"
 
 dependencies: []
 ...
