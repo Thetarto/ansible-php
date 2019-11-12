@@ -22,7 +22,13 @@ Name of the webserver daemon used by PHP. For example, apache2, httpd, nginx... 
 php_webserver_daemon: "apache2"
 ```
 ## Examples
+```yml
+---
+- hosts: somehost
+  roles:
+    - supertarto.php
 
+```
 
 ## Installation
 ```
