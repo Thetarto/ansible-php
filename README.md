@@ -8,7 +8,6 @@ Install and configure PHP with Ansible.
 None
 
 ## Tested plateforms
-* Debian 9 (Stretch)
 * Debian 10 (Buster)
 
 ## Role Variables
