@@ -26,7 +26,6 @@ php_webserver_daemon: "apache2"
 - hosts: somehost
   roles:
     - supertarto.php
-
 ```
 
 ## Installation
