@@ -1,5 +1,5 @@
 # Ansible PHP
-[![Build Status](https://travis-ci.org/supertarto/ansible-php.svg?branch=master)](https://travis-ci.org/supertarto/ansible-php)
+[![Build Status](https://travis-ci.com/supertarto/ansible-php.svg?branch=master)](https://travis-ci.com/supertarto/ansible-php)
 
 Install and configure PHP with Ansible.
 
