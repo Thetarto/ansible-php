@@ -20,6 +20,16 @@ Name of the webserver daemon used by PHP. For example, apache2, httpd, nginx... 
 ```yaml
 php_webserver_daemon: "apache2"
 ```
+
+* Optional variables:
+** php_apache_configuration
+** php_cli_configuration:
+Used with key/value like:
+```yml
+php_apache_configuration:
+- name: opcache.memory_consumption
+  value: 256
+```
 ## Examples
 ```yml
 ---

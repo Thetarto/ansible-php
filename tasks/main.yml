@@ -11,4 +11,8 @@
     dest: "/etc/cron.d/php"
     line: "MAILTO=\"\""
     state: present
+
+- name: Configure php.ini
+  include: php_ini.yml
+  when: php_apache_configuration is defined or php_cli_configuration is defined
 ...

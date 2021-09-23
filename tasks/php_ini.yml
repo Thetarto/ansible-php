@@ -1,0 +1,22 @@
+  - name: Find which php version is used
+    stat:
+      path: /usr/bin/php
+    register: php_binary
+  - name: Define php_version
+    set_fact:
+      php_version: "{{ php_binary.stat.lnk_source | basename | regex_replace('php', '')}}"
+  - name: Configuration php.ini for apache
+    lineinfile:
+      path: /etc/php/{{ php_version }}/apache2/php.ini
+      regexp: '{{ item.name }}'
+      line: '{{ item.name }}={{ item.value }}'
+    with_items: "{{ php_apache_configuration | default ([]) }}"
+    notify: Restart Webserver
+
+  - name: Configuration php.ini for cli
+    lineinfile:
+      path: /etc/php/{{ php_version }}/cli/php.ini
+      regexp: '{{ item.name }}'
+      line: '{{ item.name }}={{ item.value }}'
+    with_items: "{{ php_cli_configuration | default ([]) }}"
+    notify: Restart Webserver
