@@ -2,4 +2,3 @@
 php_packages: []
 
 php_webserver_daemon: "apache2"
-...
