@@ -1,4 +1,12 @@
 ---
+- name: Include OS-specific variables.
+  include_vars: "{{ ansible_os_family }}.yml"
+
+- name: Set the default PHP version.
+  set_fact:
+    php_default_version_debian: "{{ __php_default_version_debian }}"
+  when: php_default_version_debian is not defined and ansible_os_family == 'Debian'
+
 - name: Install PHP packages
   package:
     name: "{{ item }}"
