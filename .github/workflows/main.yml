@@ -42,7 +42,6 @@ jobs:
       matrix:
         distrib:
           - debian10:latest
-          - debian11:latest
 
     steps:
       - name: Check out the codebase.
