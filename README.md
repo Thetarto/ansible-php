@@ -9,6 +9,7 @@ None
 
 ## Tested plateforms
 * Debian 10 (Buster)
+* Debian 11 (Bulleyes)
 
 ## Role Variables
 List of packages instaled by the role. It's not yet possible to install php from source.
