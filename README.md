@@ -15,7 +15,7 @@ None
 List of packages instaled by the role. It's not yet possible to install php from source.
 ```yaml
 php_packages:
-  - php7.3
+  - "php{{php_default_version_debian}}"
 ```
 Name of the webserver daemon used by PHP. For example, apache2, httpd, nginx... Needed.
 ```yaml
