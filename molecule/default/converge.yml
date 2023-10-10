@@ -3,15 +3,16 @@
   hosts: all
 
   pre_tasks:
-  - name: Update apt cache.
-    apt:
-      update_cache: true
-      cache_valid_time: 600
-    when: ansible_os_family == 'Debian'
-    changed_when: false
+    - name: Update apt cache.
+      apt:
+        update_cache: true
+        cache_valid_time: 600
+      when: ansible_os_family == 'Debian'
+      changed_when: false
 
   roles:
     - role: supertarto.php
+
   vars:
     php_packages:
       - "php{{php_default_version_debian}}"
