@@ -1,5 +1,5 @@
 # Ansible PHP
-[![CI](https://github.com/supertarto/ansible-php/workflows/CI/badge.svg?event=push)](https://github.com/supertarto/ansible-php/actions?query=workflow%3ACI)
+[![CI](https://github.com/supertarto/ansible-php/workflows/ci.yml/badge.svg?event=push)](https://github.com/supertarto/ansible-php/actions/workflows/ci.yml)
 
 Install and configure PHP with Ansible.
 
@@ -9,7 +9,8 @@ None
 
 ## Tested plateforms
 * Debian 10 (Buster)
-* Debian 11 (Bulleyes)
+* Debian 11 (Bullseye)
+* Debian 12 (Bookworm)
 
 ## Role Variables
 List of packages instaled by the role. It's not yet possible to install php from source.
