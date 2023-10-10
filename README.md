@@ -1,5 +1,5 @@
 # Ansible PHP
-[![CI](https://github.com/supertarto/ansible-php/workflows/ci.yml/badge.svg?event=push)](https://github.com/supertarto/ansible-php/actions/workflows/ci.yml)
+[![CI](https://github.com/supertarto/ansible-php/actions/workflows/ci.yml/badge.svg)](https://github.com/supertarto/ansible-php/actions/workflows/ci.yml)
 
 Install and configure PHP with Ansible.
 
@@ -18,6 +18,8 @@ List of packages instaled by the role. It's not yet possible to install php from
 php_packages:
   - "php{{php_default_version_debian}}"
 ```
+The default version value is defined in the vars folder, based on the Debian version.
+
 Name of the webserver daemon used by PHP. For example, apache2, httpd, nginx... Needed.
 ```yaml
 php_webserver_daemon: "apache2"
@@ -32,7 +34,7 @@ php_webserver_daemon: "apache2"
 
 ## Installation
 ```
-ansible-galaxy install supertarto.php
+ansible-galaxy role install supertarto.php
 ```
 ## License
 GPL V3.0
